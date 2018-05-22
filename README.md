@@ -10,9 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 npm init 
 npm install express
 npm install body-parser
-npm install mysql
-npm install method-override
-npm install express-handlebars
+npm install mysql2
+npm install sequelize sequelize-cli
 ```
 *Ensure the ```node_modules/ ``` folder is in your .gitignore file. If it's not, add it.*
 
