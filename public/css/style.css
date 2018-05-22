@@ -10,7 +10,7 @@ body {
 /* Navbar */
 .uk-navbar {
   background-color: #051f22 !important;
-  height: 40px;
+  height: 50px;
 }
 .uk-navbar-nav {
   right: 3% !important;
@@ -23,6 +23,7 @@ body {
   width: 30%;
   margin-left: 5%;
   margin-top: 5%;
+  height: 40%
 }
 /* Create stickie footer */ 
 .footer {
