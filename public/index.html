@@ -13,26 +13,40 @@
 </head>
 
 <body>
+
   <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-
-  <nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-right">
-      <ul class="uk-navbar-nav">
-        <li class="uk-active"><a class="nav-link" href="#">Home</a>
-        <li class="uk-active"><a class="nav-link" href="#">Survey</a></li>
-        <li><a class="nav-link" href="#">Pets</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active"><a class="nav-link" href="#">Home</a>
+          <li class="uk-active"><a class="nav-link" href="#">Survey</a></li>
+          <li><a class="nav-link" href="#">Pets</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
-  <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-    <h3 class="uk-card-title">Want a dog? </h3>
-    <p>Click here -> <a href="#">SURVEY</a> To find the right breed for you!</p>
-  </div>
+  <div class="uk-container">
+      <div class="uk-grid">
+            <div class="uk-width-1-1">
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title uk-text-center">Breed Matcher</h3>
+              <p class="uk-text-center">
+                Not sure what kind of dog you're looking for?
+                </br>Answer a few questions and we'll help you find the right dog for you!
+              </p>
+              <a class="uk-button uk-button-default uk-button-large survey-button uk-text-center uk-align-center" href="#">Match me!</a>
+            </div>
+          </div>
+        </div>
 
+  </div>
   
-<div class="footer">
+    
+  
+
+
+  <div class="footer">
     <p>Footer</p>
   </div>
 </body>
