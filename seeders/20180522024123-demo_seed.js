@@ -14,7 +14,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 4,
       trainability: 1
-    }],[{
+    },{
       name: 'Redbone Coonhound',
       personality: 'Even-Tempered, amiable, eager to please',
       size: 4,
@@ -25,7 +25,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 2,
       trainability: 2
-    }],[{
+    },{
       name: 'Chow Chow',
       personality: 'Serious-Minded, bright, dignified',
       size: 3,
@@ -36,7 +36,7 @@ module.exports = {
       good_with_dogs: 0,
       shedding: 2,
       trainability: 4
-    }],[{
+    },{
       name: 'German Shepherd Dog',
       personality: 'Smart, confident, courageous',
       size: 4,
@@ -47,7 +47,7 @@ module.exports = {
       good_with_dogs: 5,
       shedding: 4,
       trainability: 1
-    }],[{
+    },{
       name: 'American Staffordshire Terrier',
       personality: 'Smart, confident, good-natured',
       size: 3,
@@ -58,7 +58,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 3,
       trainability: 3
-    }],[{
+    },{
       name: 'Great Dane',
       personality: 'Friendly, patient, dependable',
       size: 5,
@@ -69,7 +69,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 2,
       trainability: 3
-    }],[{
+    },{
       name: 'Bloodhound',
       personality: 'Independent, inquisitive, friendly',
       size: 4,
@@ -80,7 +80,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 2,
       trainability: 5
-    }],[{
+    },{
       name: 'Chihuahua',
       personality: 'Graceful, charming, sassy',
       size: 1,
@@ -91,7 +91,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 3,
       trainability: 5
-    }],[{
+    },{
       name: 'Affenpinscher',
       personality: 'Confident, famously funny, fearless',
       size: 1,
@@ -102,7 +102,7 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 2,
       trainability: 2
-    }],[{
+    },{
       name: 'Pug',
       personality: 'Loving, charming, mischievous',
       size: 2,
@@ -113,413 +113,10 @@ module.exports = {
       good_with_dogs: 1,
       shedding: 4,
       trainability: 3
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],[{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-    [{
-      name:,
-      personality:,
-      size: ,
-      activity_level: ,
-      barking_level: ,
-      hypoallergenic: ,
-      good_with_kids: ,
-      good_with_dogs: ,
-      shedding: ,
-      trainability:
-    }],
-  )
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkInsert('Person', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
+    }], {});
   },
 
   down: (queryInterface, Sequelize) => {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('Person', null, {});
-    */
+      return queryInterface.bulkDelete('Breeds', null, {});
   }
 };
