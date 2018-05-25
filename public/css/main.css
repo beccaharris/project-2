@@ -1,23 +1,18 @@
 body {
-  background-image: url('../images/bg.jpg');
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   height: 100%;
-  background-repeat: no-repeat
 }
 
 /* Navbar */
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
   background-color: #051f22 !important;
   color: white !important;
+  margin-bottom: 50px;
 }
 .fa-bars, .nav-link, .navbar-brand {
   color: white !important;
 }
-.card {
-  margin-top: 100px;
-  margin-left: 5px;
-  background-color: rgba(224, 224, 224, 0.514) !important
-}
 .fixed-bottom {
   height: 80px;
+  margin-bottom: 0;
 }

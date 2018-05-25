@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dog Matcher</title>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/survey.css"/>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars fa-2x"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pets</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="card-body">
+          <h1>Dog Breed Matcher</h1>
+          <hr>
+          <h4>Activity Level</h4>
+          <p>How active would you consider your day-to-day lifestyle?</p>
+          <select class="chosen-select" id="question-1">
+            <option value=""></option>
+            <option value="1">Couch potato</option>
+            <option value="2">Calm</option>
+            <option value="3">Exercise regularly</option>
+            <option value="4">Energetic</option>
+            <option value="5">Need lots of activity</option>
+          </select>
+        
+          <h4>Barking</h4>
+          <p>How much barking can you tolerate?</p>
+          <select class="chosen-select" id="question-1">
+            <option value=""></option>
+            <option value="1">Infrequent</option>
+            <option value="2">When Necessary</option>
+            <option value="3">Medium</option>
+            <option value="4">Likes to be vocal</option>
+            <option value="5">Frequent</option>
+          </select>
+        
+          <h4>Family</h4>
+          <p>Do you have kids?</p>
+          <select class="chosen-select" id="question-3">
+            <option value=""></option>
+            <option value="1">Nope!</option>
+            <option value="2">Yes - under 10 only</option>
+            <option value="3">Yes - over 10 only</option>
+            <option value="4">Yes - mixed bag, but supervised</option>
+            <option value="5">Yes - must be good with kids</option>
+          </select>
+        
+          <h4>Other dogs</h4>
+          <p>Do you have other dogs</p>
+          <select class="chosen-select" id="question-4">
+            <option value=""></option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        
+          <h4>Trainability</h4>
+          <p>How much time do you have to train a dog?</p>
+          <select class="chosen-select" id="question-5">
+            <option value=""></option>
+            <option value="1">Very little.</option>
+            <option value="2">I have some time, but would still prefer a dog that's easy to train.</option>
+            <option value="3">I have time to train a dog!</option>
+            <option value="4">I have plenty of time and am willing to put in a little extra work</option>
+            <option value="5">I have as much time as necessary.</option>
+          </select>
+        
+          <h4>Shedding</h4>
+          <p>How do you feel about dog hair all over the place?</p>
+          <select class="chosen-select" id="question-6">
+            <option value=""></option>
+            <option value="1">I hate dog hair...I'd prefer little or no shedding</option>
+            <option value="2">I can handle it and i understand some dogs shed in seasons.</option>
+            <option value="3">Occasional shedding doesn't bother me.</option>
+            <option value="4">I can handle dog hair - just not like, a ton.</option>
+            <option value="5">Whatever - i can deal with frequent shedding.</option>
+          </select>
+        
+          <h4>Size</h4>
+          <p>What size dog would you prefer?</p>
+          <select class="chosen-select" id="question-7">
+            <option value=""></option>
+            <option value="1">X-Small</option>
+            <option value="2">Small</option>
+            <option value="3">Medium</option>
+            <option value="4">Large</option>
+            <option value="5">X-Large</option>
+          </select>
+        
+          <h3>Allergies</h3>
+          <h5>Do you or your family members have allergies?</h5>
+          <select class="chosen-select" id="question-8">
+            <option value=""></option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+
+          <!-- ========= Submit Survey ========== -->
+          <!-- ================================== -->
+          <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Match me with a pup!
+          </button>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+  
+
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fixed bottom</a>
+  </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src="js/chosen.js"></script>
+</body>
+
+</html>
