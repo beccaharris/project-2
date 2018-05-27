@@ -1,3 +1,4 @@
+// js for the dropdowns in the survey //
 var config = {
   ".chosen-select": {},
   ".chosen-select-deselect": {
