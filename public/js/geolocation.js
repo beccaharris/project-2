@@ -1,24 +1,41 @@
 $(document).ready(function () {
-  var geocoder = new google.maps.Geocoder;
+  const $geolocateButton = document.getElementById('geolocation-button');
+  $geolocateButton.addEventListener('click', geolocate);
 
-  document.getElementById('geolocation-button').addEventListener('click', function () {
-    geocodeLatLng(geocoder);
-  });
-
-  function geocodeLatLng(geocoder) {
-    var latlng = { lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1]) };
-    geocoder.geocode({ 'location': latlng }, function (results, status) {
-      if (status === 'OK') {
-        if (results[0]) {
-          console.log(latlng)
-        } else {
-          window.alert('No results found');
-        }
-      } else {
-        window.alert('Geocoder failed due to: ' + status);
-      }
-    });
+  function geolocate() {
+    if (window.navigator && window.navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(onGeolocateSuccess, onGeolocateError);
+    }
   }
 
+  function onGeolocateSuccess(coordinates) {
+    var { latitude, longitude } = coordinates.coords;
+    function reverseGeocode() {
+      var geocoder = new google.maps.Geocoder;
+      latitude = parseFloat(latitude).toFixed(2)
+      longitude = parseFloat(longitude).toFixed(2)
+      var latlng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
+
+      geocoder.geocode({'location': latlng}, function(results, status) {
+        var zip = results[0].address_components[6].long_name
+        $('#user-zip-code').val(zip)
+      })
+    }
+    reverseGeocode();
+  }
+
+  function onGeolocateError(error) {
+    console.warn(error.code, error.message);
+
+    if (error.code === 1) {
+      // they said no
+    } else if (error.code === 2) {
+      // position unavailable
+    } else if (error.code === 3) {
+      // timeout
+    }
+  }
+
+  
 })
 //'https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyCGEkAY5NCelXoecmVjXn1Ul3eCNkzSnRE'
