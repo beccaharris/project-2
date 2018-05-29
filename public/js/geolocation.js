@@ -1,3 +1,4 @@
+// js for finding the user's current location //
 $(document).ready(function () {
   const $geolocateButton = document.getElementById('geolocation-button');
   $geolocateButton.addEventListener('click', geolocate);
@@ -17,8 +18,8 @@ $(document).ready(function () {
       var latlng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
 
       geocoder.geocode({'location': latlng}, function(results, status) {
-        var zip = results[0].address_components[6].short_name
-        console.log(zip)
+        var addressLength = results[0].address_components.length
+        var zip = results[0].address_components[addressLength - 2].long_name
         $('.user-zip-code').attr('value', zip)
       })
     }

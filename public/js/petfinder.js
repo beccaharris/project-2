@@ -10,7 +10,6 @@ $(document).ready(function () {
       url: queryUrl,
       method: 'GET'
     }).done(function(response) {
-
       const resultingPets = response.petfinder.pets.pet;
       console.log(resultingPets)
       for (var i = 0; i < resultingPets.length; i++) {
