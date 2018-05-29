@@ -17,8 +17,9 @@ $(document).ready(function () {
       var latlng = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
 
       geocoder.geocode({'location': latlng}, function(results, status) {
-        var zip = results[0].address_components[6].long_name
-        $('#user-zip-code').val(zip)
+        var zip = results[0].address_components[6].short_name
+        console.log(zip)
+        $('.user-zip-code').attr('value', zip)
       })
     }
     reverseGeocode();
@@ -26,7 +27,6 @@ $(document).ready(function () {
 
   function onGeolocateError(error) {
     console.warn(error.code, error.message);
-
     if (error.code === 1) {
       // they said no
     } else if (error.code === 2) {
@@ -36,6 +36,5 @@ $(document).ready(function () {
     }
   }
 
-  
 })
 //'https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyCGEkAY5NCelXoecmVjXn1Ul3eCNkzSnRE'
