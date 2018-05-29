@@ -39,7 +39,11 @@ module.exports = (sequelize, DataTypes) => {
     },  
   }, {});
   Survey.associate = function(models) {
-    // associations can be defined here
+    Survey.belongsTo(models.user, {
+      foreignKey: {
+        allowNull: false
+      }
+    })
   };
   return Survey;
 };
