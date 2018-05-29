@@ -39,7 +39,7 @@ $(document).ready(function() {
           trainability   : surveyTraining.val(),
           shedding       : surveyShedding.val(),
           size           : surveySize.val(),
-          hypoallergenic : surveyAllergies.val()
+          hypoallergenic : surveyAllergies.val(),
         }
         submitSurvey(newSurvey)
       }

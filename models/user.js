@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     status: {
       type: DataTypes.ENUM('active', 'inactive'),
       defaultValue: 'active'
-    }
+    },
+
   }, {});
   User.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
@@ -26,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
   User.associate = function(models) {
-    User.hasMany(models.survey, {
+    User.hasOne(models.survey, {
       onDelete: "cascade"
     })
   };

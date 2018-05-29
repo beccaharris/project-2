@@ -26,11 +26,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     good_with_kids: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     good_with_dogs: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     shedding: {
@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
     trainability: {
       type: DataTypes.INTEGER,
       allowNull: false,
-    }
+    },
   }, {});
   Breed.associate = function(models) {
     // associations can be defined here
