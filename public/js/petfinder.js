@@ -79,6 +79,7 @@ $(document).ready(function () {
             `
           )
         }
+        // Toggle for the pet description popover // 
         $(function() {
           $('.description-popover').popover({
             container: 'body',
@@ -93,6 +94,7 @@ $(document).ready(function () {
     })
   })
   
+  // Tooltip toggle for the geolocation button // 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })

@@ -67,9 +67,4 @@ body, html {
   .pet-info {
     text-align: left;
   }
-/* Popover styling */
-  .description-popover {
-    border: 2px solid #051f22 !important;
-    font-family: 'Merriweather Sans', sans-serif !important;
 
-  }

@@ -8,6 +8,7 @@
   <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
   <link rel="stylesheet" type="text/css" href="css/home.css"/>
 </head>
@@ -20,7 +21,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pets">Pets</a>
@@ -35,15 +36,16 @@
       <div class="col-md-4">
         <div class="card text-center shadow-lg p-3 mb-5 bg-white rounded">
           <div class="card-body">
-            <h5 class="card-title">Breed Matcher</h5>
+            <h3 class="card-title"><strong>Welcome to <br>The Barking Lot!</strong></h3>
             <p class="card-text text-left">
-              Not sure what kind of dog you're looking for?
+              If you're not sure what kind of dog you're looking for, or you just want to find a pet near you, we can help!
               </br></br>
-              Answer a few questions and we'll help you find the right dog for you!</p>
-              <button type="button" id="signin_button" class="btn btn-primary" data-toggle="modal" data-target="#signin_modal">
+              Sign up or sign in to take our "Breed Matcher" survey. To search for pets near you, click <a target="_blank" href="/pets">here!</a></p>
+              <hr>
+              <button type="button" id="signin_button" class="btn btn-info" data-toggle="modal" data-target="#signin_modal">
                 Sign in
               </button>          
-              <button type="button" id="signup_button" class="btn btn-primary" data-toggle="modal" data-target="#signup_modal">
+              <button type="button" id="signup_button" class="btn btn-info" data-toggle="modal" data-target="#signup_modal">
                 Sign up
               </button>          
             </div>
@@ -53,9 +55,9 @@
   </div>
 
   <nav class="navbar fixed-bottom navbar-light bg-light text-center">
-      <div class="container text-center">
-          <h5 class="col-md-12 col-sm-12 col-xs-12">&copy; 2018 Group name</h5>
-      </div>
+    <div class="container text-center">
+      <h5 class="col-md-12 col-sm-12 col-xs-12"><a class="footer" href="/">The Barking Lot</a></h5>
+    </div>
   </nav>
 
   <!-- Signup Modal -->

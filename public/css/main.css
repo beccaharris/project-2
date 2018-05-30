@@ -18,6 +18,9 @@ html,body {
   margin-bottom: 0;
   text-align: center;
 }
-.test {
-  text-align: center !important;
+.footer {
+  color: white;
+}
+.footer:hover {
+  color: white;
 }

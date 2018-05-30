@@ -51,3 +51,4 @@ The production environment for this app uses Jaws_DB and has been deployed to He
 * <a href="http://www.passportjs.org/">Passport.js (Local Strategy)</a>
 * <a href="https://getbootstrap.com/">Bootstrap v4.0</a>
 * <a href="https://www.petfinder.com/developers/api-docs">Petfinder API</a>
+* <a href="https://developers.google.com/maps/documentation/geolocation/intro">Google Geolocation API</a>

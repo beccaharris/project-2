@@ -2,12 +2,16 @@ body {
   background-image: url('../images/bg.jpg');
   margin-bottom: 80px;
   height: 100%;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 .card {
   margin-top: 40px;
   margin-left: 5px;
   background-color: rgba(224, 224, 224, 0.514) !important
+}
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
 }
 #signin_button {
   margin-right: 8% !important
