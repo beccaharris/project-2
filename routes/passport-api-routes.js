@@ -10,7 +10,7 @@
 
     // Route for signing user up //
     app.post("/api/signup", function (req, res) {
-      db.user.create({
+      db.User.create({
         email: req.body.email,
         password: req.body.password
       }).then(function () {

@@ -11,7 +11,7 @@ $(document).ready(function() {
       surveyAllergies = $('#survey-allergies');
   
   $('#survey-submit').on('click', function(event) {
-    event.preventDefault
+    event.preventDefault();
 
       // == Form validation == //
       function validate() {

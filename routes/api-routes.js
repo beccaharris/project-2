@@ -5,7 +5,7 @@ module.exports = function (app) {
 
   // Route for saving a new survey //
   app.post('/api/survey/', function (req, res) {
-    db.survey.create({
+    db.Survey.create({
       name: req.body.name,
       activity_level: req.body.activity_level,
       barking_level: req.body.barking_level,
@@ -16,18 +16,18 @@ module.exports = function (app) {
       size: req.body.size,
       hypoallergenic: req.body.hypoallergenic,
     })
-      .then(function (dbsurvey) {
-        res.json(dbsurvey)
+      .then(function (dbSurvey) {
+        res.json(dbSurvey)
       })
   })
 
   // GET route for getting all breeds from the breeds table
   app.get("/api/breeds", function (req, res) {
     var query = {};
-    db.breed.findAll({
+    db.Breed.findAll({
       where: query
-    }).then(function (dbbreed) {
-      res.json(dbbreed)
+    }).then(function (dbBreed) {
+      res.json(dbBreed)
     })
   })
 

@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Survey = sequelize.define('survey', {
+  var Survey = sequelize.define('Survey', {
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -39,11 +39,11 @@ module.exports = (sequelize, DataTypes) => {
     },  
   }, {});
   Survey.associate = function(models) {
-    //Survey.belongsTo(models.user, {
-    //  foreignKey: {
-    //    allowNull: false
-    //  }
-    //})
+    Survey.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    })
   };
   return Survey;
 };
