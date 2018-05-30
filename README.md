@@ -1,4 +1,4 @@
-# Barking Lot
+# The Barking Lot
 The purpose of this app is to match users with the dog breed that will likely best fit their lifestyle and wants in a dog. To be matched with a breed, users have to sign up. They will then be asked to take a short survey. The results of their survey will be compared against different dog breed characteristics and will match the user and dog breed accordingly. Once matched with a breed, users will be able to search local pet shelters to find dogs that fit the description. If someone just wants to browse available pets in the area, they can go straight to the "Pets" link from the home page and do not have to be logged in. 
 
 ## Getting Started 
@@ -50,3 +50,4 @@ The production environment for this app uses Jaws_DB and has been deployed to He
 * <a href="https://www.npmjs.com/package/mysql2">MySQL2</a>
 * <a href="http://www.passportjs.org/">Passport.js (Local Strategy)</a>
 * <a href="https://getbootstrap.com/">Bootstrap v4.0</a>
+* <a href="https://www.petfinder.com/developers/api-docs">Petfinder API</a>
