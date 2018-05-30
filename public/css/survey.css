@@ -1,5 +1,11 @@
+body, html {
+  margin-bottom: 100px;
+  height: 100%;
+  background-image: url('../images/brickwall_@2X.png');
+}
 .card {
   margin-top: 50px;
+  margin-bottom: 150px;
 }
 .chosen-container {
   margin-bottom: 20px !important;
