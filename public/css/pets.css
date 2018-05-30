@@ -1,3 +1,75 @@
 body, html {
-  background-image: url('../images/brickwall_@2X.png')
+  background-image: url('../images/brickwall_@2X.png');
+  margin-bottom: 100px;
+  height: 100%;
 }
+
+/* For the "Find a Pet" header section */
+  .zip-form {
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 2px solid #051f22
+  }
+  .card-title, .zip-form-info {
+    text-align: center
+  }
+  .form-control {
+    width:30%;
+  }
+  .search-buttons {
+    margin-top: 1%
+  }
+  #petfinder {
+    margin-right: 1%
+  }
+
+/* Results Styling */
+  /* We'll have 3 cards per row, so remove margin on the right for every 3rd card so they line up nicely */
+  #pet-card-2, #pet-card-5, #pet-card-8, #pet-card-11, #pet-card-14, #pet-card-17, #pet-card-20, #pet-card-23 {
+    margin-right: 0;
+  }
+  .pet-24 {
+    margin-bottom: 125px;
+  }
+  #pet-pic-24 {
+    height: 45% !important
+  }
+  /* Need to set to fixed height or this will get wonky for some pictures */ 
+  .card-img-top {
+    height: 45%
+  }
+  .pet-card {
+    width: 21rem;
+    height: 500px;
+    float: left;
+    margin-right: 51px;
+    margin-bottom: 50px;
+    border: 2px solid #051f22
+  }
+  .pet-card-body {
+    padding-top: 4px;
+  }
+  /* Pet names come through as all uppercase - capitalize doesn't work for all uppercase, so this is a work around */
+  .pet-name {
+    text-transform: lowercase;
+    font-family: 'Bree Serif', serif;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .pet-name::first-letter {
+    text-transform: uppercase
+  }
+  hr {
+    margin-top: 2px;
+    margin-bottom: 3px
+  }
+  .pet-info {
+    text-align: left;
+  }
+/* Popover styling */
+  .description-popover {
+    border: 2px solid #051f22 !important;
+    font-family: 'Merriweather Sans', sans-serif !important;
+
+  }

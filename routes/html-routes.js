@@ -21,8 +21,8 @@ module.exports = function (app) {
   });
 
   // survey answers page
-  app.get("/answer", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/answer.html"));
+  app.get("/result", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/result.html"));
   });
 
 };

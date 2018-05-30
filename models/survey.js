@@ -14,11 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     good_with_kids: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     good_with_dogs: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     trainability: {
@@ -39,11 +39,11 @@ module.exports = (sequelize, DataTypes) => {
     },  
   }, {});
   Survey.associate = function(models) {
-    Survey.belongsTo(models.user, {
-      foreignKey: {
-        allowNull: false
-      }
-    })
+    //Survey.belongsTo(models.user, {
+    //  foreignKey: {
+    //    allowNull: false
+    //  }
+    //})
   };
   return Survey;
 };

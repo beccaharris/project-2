@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  
   $('#petfinder').on('click', function(event) {
     $('#results').empty();
     var userZipCode = $('.user-zip-code').val().trim();
@@ -14,27 +14,77 @@ $(document).ready(function () {
       console.log(resultingPets)
       for (var i = 0; i < resultingPets.length; i++) {
         // result attributes we're gonna use //
-        var PFpetPicUrl         = resultingPets[i].media.photos.photo[2].$t;
-        var PFpetName           = resultingPets[i].name.$t;
-        var PFpetDescription    = resultingPets[i].description.$t;
-        var PFpetAge            = resultingPets[i].age.$t;
-        // if there's only one breed, it's just one object
-        var PFpetBreed          = resultingPets[i].breeds.breed;
-        // if there's more than one breed, it's an array
+        var PFpetPicUrl         = resultingPets[i].media.photos.photo[2].$t,
+            PFpetName           = resultingPets[i].name.$t,
+            PFpetSex            = resultingPets[i].sex.$t,
+            PFpetDescription    = resultingPets[i].description.$t,
+            PFpetAge            = resultingPets[i].age.$t,
+            PFpetBreed          = resultingPets[i].breeds.breed,
+            PFpetContact        = resultingPets[i].contact.email.$t,
+            PFpetSize           = resultingPets[i].size.$t;
 
-        var petCard = $(`<div class='card' id='pet-card-${[i]}' style='width:11rem;height:300px;float:left;margin-right:35px'>`)
+        var petCard = $(`<div class='card pet-card' id='pet-card-${[i]}'>`)
         // pet picture //
         var petPic = $(`<img class='card-img-top' id='pet-pic-${[i]}'>`)
         petPic.attr('src', PFpetPicUrl)
         
         // pet info //
-        var petCardBody = $(`<div class='card-body pet-${[i]}'>`)
-        petCardBody.append(
-          `<h5>${PFpetName}</h5>
-          <p>${PFpetAge}<br>
-          <button class='btn btn-primary'>Read More!</button>`
-        )
-        
+        var petCardBody = $(`<div class='card-body pet-${[i]} pet-card-body'>`)
+        // if there's more than one breed, it's an array //
+        if (Array.isArray(PFpetBreed)) {
+          var PFpetBreeds0        = resultingPets[i].breeds.breed[0].$t;
+          var PFpetBreeds1        = resultingPets[i].breeds.breed[1].$t;
+          petCardBody.append(`
+            <h2 class="pet-name">${PFpetName}</h2>
+            <hr>
+            <p class="pet-info"><strong>Age:</strong> ${PFpetAge}<br>
+               <strong>Sex:</strong> ${PFpetSex}<br>
+               <strong>Size:</strong> ${PFpetSize}<br>
+               <strong>Breeds:</strong> ${PFpetBreeds0 + ', ' + PFpetBreeds1}<br>
+               <strong>Contact:</strong> ${PFpetContact}<br>
+            </p>
+            <div class="d-flex align-items-baseline justify-content-center">
+                <button 
+                 type="button" 
+                 class="btn btn-secondary description-popover" 
+                 data-container="body" 
+                 data-toggle="popover" 
+                 data-placement="top" 
+                 data-content="${PFpetDescription}">
+                   More Info!
+                </button>
+              </div>
+          `
+        )} else {
+          petCardBody.append(`
+            <h2 class="pet-name">${PFpetName}</h2>
+            <hr>
+            <p class="pet-info"><strong>Age:</strong> ${PFpetAge}<br>
+               <strong>Sex:</strong> ${PFpetSex}<br>
+               <strong>Size:</strong> ${PFpetSize}<br>
+               <strong>Breed:</strong> ${PFpetBreed.$t}<br>
+               <strong>Contact:</strong> ${PFpetContact}<br>
+               </p>
+               <div class="d-flex align-items-baseline justify-content-center">
+                <button 
+                 type="button" 
+                 class="btn btn-secondary description-popover" 
+                 data-container="body" 
+                 data-toggle="popover" 
+                 data-placement="top" 
+                 data-content="${PFpetDescription}">
+                   More Info!
+                </button>
+              </div>
+            `
+          )
+        }
+        $(function() {
+          $('.description-popover').popover({
+            container: 'body',
+            trigger: 'focus'
+          })
+        })
         // final card //
         petCard.append(petPic)
         petCard.append(petCardBody)
@@ -42,5 +92,8 @@ $(document).ready(function () {
       }
     })
   })
-
+  
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 });

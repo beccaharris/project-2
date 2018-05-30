@@ -27,9 +27,9 @@ module.exports = (sequelize, DataTypes) => {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
   User.associate = function(models) {
-    User.hasOne(models.survey, {
-      onDelete: "cascade"
-    })
+    //User.hasOne(models.survey, {
+    //  onDelete: "cascade"
+    //})
   };
   return User;
 };

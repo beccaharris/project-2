@@ -38,4 +38,3 @@ $(document).ready(function () {
   }
 
 })
-//'https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=AIzaSyCGEkAY5NCelXoecmVjXn1Ul3eCNkzSnRE'
