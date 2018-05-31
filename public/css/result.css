@@ -1,0 +1,27 @@
+.jumbotron {
+
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 111px;
+}
+
+.display-6 {
+
+    text-align: center;
+}
+
+.lead {
+    
+    margin-top: 27px;
+}
+
+.doggy {
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+
+    margin: 0 auto;
+}
