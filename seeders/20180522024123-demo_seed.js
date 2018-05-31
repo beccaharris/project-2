@@ -125,17 +125,6 @@ module.exports = {
       shedding: 1,
       trainability: 4
     },{
-      name: 'Saint Bernard',
-      personality: 'Inquisitive, playful, charming',
-      size: 5,
-      activity_level: 3,
-      barking_level: 2,
-      hypoallergenic: 1,
-      good_with_kids: 2,
-      good_with_dogs: 2,
-      shedding: 5,
-      trainability: 3
-    },{
       name:'Labrador Retriever',
       personality:'Friendly, avtive, outgoing',
       size: 4,
@@ -235,7 +224,7 @@ module.exports = {
       shedding: 1,
       trainability: 1
     },{
-      name:'Xoloitzciuntli',
+      name:'Xoloitzcuintli',
       personality:'Loyal, alert, calm',
       size: 3,
       activity_level: 4,
