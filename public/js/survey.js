@@ -30,18 +30,23 @@ $(document).ready(function() {
         return isValid;
       }
       if (validate()) {
-        var newSurvey = {
-          name           : surveyName.val().trim(),
-          activity_level : surveyActivity.val(),
-          barking_level  : surveyBarking.val(),
-          good_with_kids : surveyKids.val(),
-          good_with_dogs : surveyDogs.val(),
-          trainability   : surveyTraining.val(),
-          shedding       : surveyShedding.val(),
-          size           : surveySize.val(),
-          hypoallergenic : surveyAllergies.val(),
-        }
-        submitSurvey(newSurvey)
+        let id;
+        $.get('/api/user_data', function(result) {
+          id = result.id;
+          var newSurvey = {
+            UserId         : id,
+            name           : surveyName.val().trim(),
+            activity_level : surveyActivity.val(),
+            barking_level  : surveyBarking.val(),
+            good_with_kids : surveyKids.val(),
+            good_with_dogs : surveyDogs.val(),
+            trainability   : surveyTraining.val(),
+            shedding       : surveyShedding.val(),
+            size           : surveySize.val(),
+            hypoallergenic : surveyAllergies.val(),
+          }
+          submitSurvey(newSurvey)
+        });
       }
   })
 

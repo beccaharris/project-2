@@ -5,7 +5,10 @@ module.exports = function (app) {
 
   // Route for saving a new survey //
   app.post('/api/survey/', function (req, res) {
+    console.log('Hi mom');
+    console.log(req.body);
     db.Survey.create({
+      UserId: Number(req.body.UserId),
       name: req.body.name,
       activity_level: req.body.activity_level,
       barking_level: req.body.barking_level,
@@ -23,11 +26,14 @@ module.exports = function (app) {
 
   // GET route for getting all breeds from the breeds table
   app.get("/api/breeds", function (req, res) {
+    console.log('HIT');
     var query = {};
     db.Breed.findAll({
       where: query
     }).then(function (dbBreed) {
       res.json(dbBreed)
+    }).catch(function(err) {
+      console.log(err);
     })
   })
 

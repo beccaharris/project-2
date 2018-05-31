@@ -1,6 +1,12 @@
 'use strict';
+
+const User = require('./user');
 module.exports = (sequelize, DataTypes) => {
   var Survey = sequelize.define('Survey', {
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -38,12 +44,15 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },  
   }, {});
-  Survey.associate = function(models) {
-    Survey.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
-    })
-  };
+  // Survey.associate = function(models) {
+  //   Survey.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   })
+  //   User.hasOne(models.Survey, {
+
+  //   })
+  // };
   return Survey;
 };
