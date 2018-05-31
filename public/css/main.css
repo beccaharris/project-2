@@ -1,0 +1,26 @@
+html,body {
+  margin-bottom: 100px;
+  height: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+/* Navbar */
+.navbar, .navbar-expand-lg, .navbar-light, .bg-light {
+  background-color: #051f22 !important;
+  color: white !important;
+  margin-bottom: 50px;
+}
+.fa-bars, .nav-link, .navbar-brand, .logout-link {
+  color: white !important;
+}
+.fixed-bottom {
+  margin-top: 50px;
+  height: 80px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer {
+  color: white;
+}
+.footer:hover {
+  color: white;
+}

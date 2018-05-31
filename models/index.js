@@ -24,13 +24,26 @@ fs
     db[model.name] = model;
   });
 
-Object.keys(db).forEach(modelName => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
-});
+// Object.keys(db).forEach(modelName => {
+//   if (db[modelName].associate) {
+//     db[modelName].associate(db);
+//   }
+// });
+
+  // foreignKey: {
+  //   name: 'UserId',
+  //   allowNull: false
+  // }
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
+db.User = require('./user')(sequelize, Sequelize);
+db.Survey = require('./survey')(sequelize, Sequelize);
+
+db.User.hasOne(db.Survey, {
+  onDelete: "cascade"
+});
+db.Survey.belongsTo(db.User);
 
 module.exports = db;
