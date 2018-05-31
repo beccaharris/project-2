@@ -1,9 +1,8 @@
 $(document).ready(function () {
-  if ($('.user-zip-code').val("")) {
-    $('#petfinder').attr('disabled',true)
-  }
+  
 
   $('#petfinder').on('click', function(event) {
+    $('#petfinder').attr('disabled', true)
     $('#results').empty();
     $('.fixed-bottom').hide();
     var userZipCode = $('.user-zip-code').val().trim();
@@ -15,6 +14,8 @@ $(document).ready(function () {
       method: 'GET'
     }).done(function(response) {
       const resultingPets = response.petfinder.pets.pet;
+      $('#petfinder').attr('disabled', false)
+      $('.user-zip-code').val("")
       console.log(resultingPets)
       for (var i = 0; i < resultingPets.length; i++) {
         // result attributes we're gonna use //
