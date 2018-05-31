@@ -44,7 +44,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 5,
+      good_with_dogs: 1,
       shedding: 4,
       trainability: 1
     },{
@@ -121,7 +121,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 4
     },{
@@ -132,7 +132,7 @@ module.exports = {
       barking_level: 2,
       hypoallergenic: 0,
       good_with_kids: 2,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 5,
       trainability: 3
     },{
@@ -143,7 +143,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 5,
       trainability: 1
     },{
@@ -154,7 +154,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 3,
       trainability: 3
     },{
@@ -165,7 +165,7 @@ module.exports = {
       barking_level: 4,
       hypoallergenic: 0,
       good_with_kids: 3,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 3,
       trainability: 4
     },{
@@ -176,7 +176,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 3
     },{
@@ -187,7 +187,7 @@ module.exports = {
       barking_level: 1,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 3
     },{
@@ -198,7 +198,7 @@ module.exports = {
       barking_level: 4,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 1
     },{
@@ -209,7 +209,7 @@ module.exports = {
       barking_level: 2,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 5,
       trainability: 2
     },{
@@ -220,7 +220,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 3
     },{
@@ -231,7 +231,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 1
     },{
@@ -242,7 +242,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 3
     },{
@@ -253,7 +253,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 5
     },{
@@ -264,7 +264,7 @@ module.exports = {
       barking_level:3,
       hypoallergenic: 1,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 2
     },{
@@ -275,7 +275,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 1,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 3
     },{
@@ -286,7 +286,7 @@ module.exports = {
       barking_level: 2,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 5,
       trainability: 3
     },{
@@ -297,7 +297,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 1,
       trainability: 5
     },{
@@ -308,7 +308,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 5
     },{
@@ -319,7 +319,7 @@ module.exports = {
       barking_level: 4,
       hypoallergenic: 0,
       good_with_kids: 3,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 5
     },{
@@ -330,7 +330,7 @@ module.exports = {
       barking_level: 5,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 3,
       trainability: 1
     },{
@@ -341,7 +341,7 @@ module.exports = {
       barking_level: 4,
       hypoallergenic: 0,
       good_with_kids: 4,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 3,
       trainability: 3
     },{
@@ -352,7 +352,7 @@ module.exports = {
       barking_level: 2,
       hypoallergenic: 0,
       good_with_kids: 3,
-      good_with_dogs: 1,
+      good_with_dogs: 0,
       shedding: 3,
       trainability: 3
     },{
@@ -363,7 +363,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 2,
+      good_with_dogs: 1,
       shedding: 2,
       trainability: 1
     },{
@@ -374,7 +374,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 4,
-      good_with_dogs: 1,
+      good_with_dogs: 0,
       shedding: 4,
       trainability: 3
     },{
@@ -385,7 +385,7 @@ module.exports = {
       barking_level: 3,
       hypoallergenic: 0,
       good_with_kids: 5,
-      good_with_dogs: 3,
+      good_with_dogs: 1,
       shedding: 4,
       trainability: 3
     }],
