@@ -16,6 +16,7 @@ $(document).ready(function () {
       const resultingPets = response.petfinder.pets.pet;
       $('#petfinder').attr('disabled', false)
       $('.user-zip-code').val("")
+      $('#geolocation-button').attr('disabled', false);
       console.log(resultingPets)
       for (var i = 0; i < resultingPets.length; i++) {
         // result attributes we're gonna use //
