@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('breeds', {
+    return queryInterface.createTable('Breeds', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -33,11 +33,11 @@ module.exports = {
         allowNull: false,
       },
       good_with_kids: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       good_with_dogs: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       shedding: {
@@ -57,10 +57,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
         defaultValue: Sequelize.literal('NOW()'),
-      }
+      },
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('breeds');
+    return queryInterface.dropTable('Breeds');
   }
 };

@@ -1,17 +1,15 @@
 'use strict';
+
+const User = require('./user');
 module.exports = (sequelize, DataTypes) => {
-  var Breed = sequelize.define('Breed', {
+  var Survey = sequelize.define('Survey', {
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    personality: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    size: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
     },
     activity_level: {
       type: DataTypes.INTEGER,
@@ -19,10 +17,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     barking_level: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    hypoallergenic: {
-      type: DataTypes.BOOLEAN,
       allowNull: false,
     },
     good_with_kids: {
@@ -33,17 +27,32 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    shedding: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     trainability: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    shedding: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    size: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    hypoallergenic: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+    },  
   }, {});
-  Breed.associate = function(models) {
-    // associations can be defined here
-  };
-  return Breed;
+  // Survey.associate = function(models) {
+  //   Survey.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   })
+  //   User.hasOne(models.Survey, {
+
+  //   })
+  // };
+  return Survey;
 };
