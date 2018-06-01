@@ -21,15 +21,17 @@ $(document).ready(function() {
             isValid = false;
           }
         });
-
         $(".chosen-select").each(function () {
           if ($(this).val() === "") {
             isValid = false;
           }
         });
+        $('#invalid-alert').replaceWith(`<div class="alert alert-danger" role="alert">
+          You missed one! Please answer all questions.</div>`)
         return isValid;
       }
       if (validate()) {
+        
         let id;
         $.get('/api/user_data', function(result) {
           id = result.id;
@@ -52,7 +54,7 @@ $(document).ready(function() {
 
   function submitSurvey(survey) {
     $.post('/api/survey/', survey, function() {
-      window.location.href = '/result'
+      window.location.href = '/results'
     })
   }
 
