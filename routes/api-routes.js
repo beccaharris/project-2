@@ -5,8 +5,6 @@ module.exports = function (app) {
 
   // Route for saving a new survey //
   app.post('/api/survey/', function (req, res) {
-    console.log('Hi mom');
-    console.log(req.body);
     db.Survey.create({
       UserId: Number(req.body.UserId),
       name: req.body.name,
