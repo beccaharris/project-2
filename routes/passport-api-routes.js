@@ -5,7 +5,7 @@
 
     // Route for logging user in //
     app.post("/api/login", passport.authenticate("local"), function (req, res) {
-      res.json("/survey");
+      res.json("/dash");
     });
 
     // Route for signing user up //
