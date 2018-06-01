@@ -22,7 +22,7 @@ module.exports = function (app) {
 
   // survey answers page
   app.get("/results", isAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/result.html"));
+    res.sendFile(path.join(__dirname, "../public/results.html"));
   });
   
   app.get("/dash", isAuthenticated, function(req, res) {

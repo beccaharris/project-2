@@ -1,5 +1,4 @@
 // js for finding the user's current location //
-$(document).ready(function () {
   const $geolocateButton = document.getElementById('geolocation-button');
   $geolocateButton.addEventListener('click', geolocate);
 
@@ -37,5 +36,3 @@ $(document).ready(function () {
       // timeout
     }
   }
-
-})

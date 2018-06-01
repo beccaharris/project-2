@@ -54,7 +54,7 @@ $(document).ready(function() {
 
   function submitSurvey(survey) {
     $.post('/api/survey/', survey, function() {
-      window.location.href = '/result'
+      window.location.href = '/results'
     })
   }
 

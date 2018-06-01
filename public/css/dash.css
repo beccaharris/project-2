@@ -1,0 +1,36 @@
+body, html {
+  margin-bottom: 100px;
+  height: 100%;
+  background-image: url('../images/brickwall_@2X.png');
+}
+.welcome-pic {
+  width: 35%;
+  height: 35%;
+}
+.display-4 {
+  text-align: center;
+  margin-bottom: 0
+}
+.card {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.card-body {
+  margin-top: 20px;
+}
+.card {
+  border-radius: 8px;
+  border: 2px solid #051f22
+}
+#options-row {
+  margin-top: 90px;
+}
+h5 {
+  text-align: center;
+}
+button {
+  margin-top: 10px;
+}
+.card-body {
+  margin-top: 0
+}
