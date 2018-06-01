@@ -24,3 +24,13 @@ body {
 .btn-primary {
   margin: 0 auto;
 }
+
+.pet-card {
+  height: 550px;
+}
+.guidance {
+  text-align: center
+}
+strong {
+  font-weight: bold
+}

@@ -5,7 +5,6 @@ $(document).ready(function () {
     $('#petfinder').attr('disabled', true)
     $('#results').empty();
     $('.fixed-bottom').hide();
-    var userZipCode = $('.user-zip-code').val().trim();
     var queryUrl = `https://api.petfinder.com/pet.find?format=json&key=a7e12d55f8325f95f249644d6b56c772&location=${userZipCode}&animal=dog&callback=?`
 
     $.ajax({
