@@ -1,5 +1,4 @@
 // js for finding the user's current location //
-$(document).ready(function () {
   const $geolocateButton = document.getElementById('geolocation-button');
   $geolocateButton.addEventListener('click', geolocate);
 
@@ -7,6 +6,7 @@ $(document).ready(function () {
     if (window.navigator && window.navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(onGeolocateSuccess, onGeolocateError);
     }
+    $geolocateButton.disabled = true
   }
 
   function onGeolocateSuccess(coordinates) {
@@ -20,7 +20,7 @@ $(document).ready(function () {
       geocoder.geocode({'location': latlng}, function(results, status) {
         var addressLength = results[0].address_components.length
         var zip = results[0].address_components[addressLength - 2].long_name
-        $('.user-zip-code').attr('value', zip)
+        $('.user-zip-code').val(zip)
       })
     }
     reverseGeocode();
@@ -36,5 +36,3 @@ $(document).ready(function () {
       // timeout
     }
   }
-
-})

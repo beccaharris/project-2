@@ -1,27 +1,36 @@
-.jumbotron {
+body {
+  background-image: url('../images/brickwall_@2X.png');
+}
 
-    background-color: white;
-    border-radius: 6px;
-    margin-bottom: 111px;
+.jumbotron {
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 50px;
 }
 
 .display-6 {
-
-    text-align: center;
+  text-align: center;
 }
 
 .lead {
-    
-    margin-top: 27px;
+  margin-top: 27px;
 }
 
 .doggy {
-
-    width: 100%;
-    margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .btn-primary {
+  margin: 0 auto;
+}
 
-    margin: 0 auto;
+.pet-card {
+  height: 550px;
+}
+.guidance {
+  text-align: center
+}
+strong {
+  font-weight: bold
 }
