@@ -6,7 +6,7 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/dash");
+      return res.redirect("/dash");
     }
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
