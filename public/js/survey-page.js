@@ -23,11 +23,13 @@ $(document).ready(function() {
         });
         $(".chosen-select").each(function () {
           if ($(this).val() === "") {
-            isValid = false;
+            isValid = false; 
           }
         });
-        $('#invalid-alert').replaceWith(`<div class="alert alert-danger" role="alert">
+        if (!isValid) {
+          $('#invalid-alert').replaceWith(`<div class="alert alert-danger" role="alert">
           You missed one! Please answer all questions.</div>`)
+        }
         return isValid;
       }
       if (validate()) {
